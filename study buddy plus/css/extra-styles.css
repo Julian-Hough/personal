@@ -1,0 +1,10 @@
+.outline {
+    -webkit-text-stroke: 1px black;
+}
+
+.box {
+    background-color: rgba(50, 50, 50, .5);
+    border-radius: 6px;
+    text-align: justify;
+    padding: 15px;
+}

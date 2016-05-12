@@ -1,0 +1,337 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+html {
+  font-size: 14px; }
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  color: #bfc1c8;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b; }
+
+h1 {
+	color: white;
+}
+  
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+
+.forecast-container {
+  width: 100%;
+  background: #323544;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .forecast-container .forecast {
+    display: table-cell;
+    vertical-align: top; }
+    .forecast-container .forecast:nth-child(even) {
+      background-color: #262936; }
+    @media screen and (max-width: 990px) {
+      .forecast-container .forecast {
+        display: block;
+        width: 20%;
+        float: left; } }
+    .forecast-container .forecast.today {
+      width: 420px; }
+      .forecast-container .forecast.today .forecast-header {
+        *zoom: 1; }
+        .forecast-container .forecast.today .forecast-header:after {
+          content: " ";
+          clear: both;
+          display: block;
+          overflow: hidden;
+          height: 0; }
+        .forecast-container .forecast.today .forecast-header .day {
+          float: left; }
+        .forecast-container .forecast.today .forecast-header .date {
+          float: right; }
+      .forecast-container .forecast.today .forecast-content {
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+      .forecast-container .forecast.today .location {
+        font-size: 18px;
+        font-size: 1.2857142857em;
+        font-weight: 400; }
+      .forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
+        display: inline-block;
+        vertical-align: middle; }
+      .forecast-container .forecast.today .degree .num {
+        font-size: 90px;
+        font-size: 6.4285714286rem;
+        margin-right: 30px; }
+      .forecast-container .forecast.today span {
+        margin-right: 20px; }
+        .forecast-container .forecast.today span img {
+          margin-right: 5px;
+          vertical-align: middle; }
+      @media screen and (max-width: 990px) {
+        .forecast-container .forecast.today {
+          display: block;
+          width: 100%; } }
+    .forecast-container .forecast .forecast-header {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      text-align: center;
+      font-weight: 400; }
+    .forecast-container .forecast .forecast-icon {
+      height: 50px; }
+    .forecast-container .forecast .forecast-content {
+      padding: 50px 20px 10px;
+      text-align: center; }
+      .forecast-container .forecast .forecast-content .forecast-icon {
+        margin-bottom: 20px; }
+      .forecast-container .forecast .forecast-content .degree {
+        font-size: 24px;
+        font-size: 1.7142857143em;
+        color: white;
+        font-weight: 700; }
+      .forecast-container .forecast .forecast-content small {
+        font-size: 16px;
+        font-size: 1.1428571429em; }
+
+
+/* Footer */
+
+footer {
+    padding: 50px 0;
+}

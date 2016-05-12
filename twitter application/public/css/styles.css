@@ -1,0 +1,217 @@
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background: url('http://www.twitrcovers.com/wp-content/uploads/2013/04/Tower-Skyscrapers-l.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	padding-top: 25px;
+	height: 100%;
+}
+
+.centerThis {
+	text-align: center;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.disclaimer {
+	color: white;
+}
+
+#header {
+	text-align: center;
+	color: white;
+}
+
+#tweets {
+	margin-bottom: 140px;
+}
+
+.tweetBox {
+	background: white;
+	border: .5px solid black;
+	border-color: #00aced;
+	border-radius: 5px;
+	padding: 25px;
+	width: 60%;
+	margin: auto;
+	
+}
+
+.blackBox {
+	border: .5px solid black;
+	border-radius: 5px;
+	background: white;
+}
+
+.tweetInnerBox {
+	background: white;
+}
+	  
+.propic {
+	border-radius: 10px;
+	height: 60px;
+	width: 60px;
+}
+
+.name {
+	color: #00aced;
+}
+
+.screenName {
+	color: silver;
+	display: inline;
+}
+
+.text {
+	color: #00aced;
+}
+	
+.user {
+	padding-bottom: 20px;
+}	
+
+.user li ul {
+	display: inline;
+}
+	
+.user  li{
+	display: inline;
+}	
+
+.user li ul li {
+	display: inline;
+}
+
+.blackBox ul li {
+	display: inline;
+}
+
+.icons {
+	height: 20px;
+	width: 20px;
+}
+
+.tab {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	text-align: center;
+	width: 60%;
+}
+.tabs {
+    display: inline;
+    border: 1px solid #000;
+    border-bottom-width: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    margin: 3px 3px 0px 3px;
+	.margin-left: auto;
+	.margin-right: auto;
+    padding: 5px 5px 0px 5px;
+    background-color: #CCC;
+    color: #696969;
+}
+
+.tab-pane {
+    border: 1px solid black;
+	background-color: rgba(0,172,237,.62);
+	border-radius: 5px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em;
+	margin-bottom: 2.5em;
+	width: 60%;
+}
+
+#search {
+	width: 240px;
+}
+
+#search2 {
+	width: 240px;
+}
+
+@media (max-width: 480px) {
+	#search {
+		width: 150px;
+	}
+	#search2 {
+		width: 150px;
+	}
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	clear: both;
+	background-color: rgba(0,172,237,.75);
+	text-align: center;
+	color: white;
+}
+
+.shared, .bar, .label {
+  font-size: 8pt;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.malebar {
+  fill: steelblue;
+}
+
+.chart {
+	font-size: 10px;
+}
+
+.whiteBox {
+	background-color: rgba(255,255,255,.5);
+	margin-bottom: 150px;
+}
+
+h1, .liBlack {
+	color: black !important;
+}
+
+.box {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.pie1 {
+	background: rgb(49,130,189);
+}
+
+.pie2 {
+	background: rgb(107,174,214);
+}
+
+.pie3 {
+	background: rgb(158,202,225);
+}
+
+.pie4 {
+	background: rgb(198,219,239);
+}
+
+.pie5 {
+	background: rgb(230,85,13);
+}

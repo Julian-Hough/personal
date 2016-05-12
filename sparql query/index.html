@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		
+		<style>
+			body {
+				background-color: #7EC0EE;
+			}
+			h1 {
+				clear: both;
+				text-align: center;
+				
+			}
+			form {
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				text-align: center;
+			}
+			
+			#query {
+				width: 50%;
+				height: 175px;
+			}
+			
+			#button {
+				margin-top: 20px;
+			}
+			
+			#results {
+				clear: both;
+				text-align: center;
+			}
+			
+			#header {
+				background: #f8f8f8; 
+				font-weight: bold;    
+				padding: 2px;
+			}
+			
+			table {
+				border: 1px solid #7EC0EE;
+				background-color: white;
+				margin-top: 50px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			td {
+				border: 1px solid #666;
+				
+			}
+
+			
+		</style>
+	</head>
+	
+	
+	<body>
+		<h1>Node.JS SPARQL Query</h1>
+		<form>
+			<!-- form to organize the query textarea and button -->
+			<!-- to allow the same format shown when loading index.html, this crazy -->
+			<!-- format is necessary to have all the correct spacing -->
+			<textarea name="query" id="query" >PREFIX : <http://dbpedia.org/resource/>
+
+SELECT ?name ?birth ?deathPlace 
+WHERE { ?person dbo:birthPlace :New_York . ?person dbo:birthDate ?birth . ?person dbo:birthName ?name . ?person dbo:deathPlace ?deathPlace .      
+FILTER (langMatches(lang(?name),"en")) } 
+ORDER BY desc(?birth) LIMIT 10</textarea> <br/>
+			<button type="button" id="button" onclick="queryResults()">Query Results</button>
+		</form>
+		<!-- SPARQL results table  -->
+		<table id="sparqlTable">
+		
+		</table>
+		
+	</body>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	//socket
+	var socket = io();
+	//drawtable function that overwrites the content of table sparqlTable
+	function drawTable(data) {
+		$("#sparqlTable tr").remove();
+		for (var i = 0; i < data.length; i++) {
+			//gets variables
+			if (i == 0) {
+				var row = "<tr id=\"header\">";
+				for (key in data[i]){
+					row += "<td>" + key + "</td>";
+				};
+				row += "</tr>";
+				$("#sparqlTable").append(row);
+			}
+			//gets column data
+			var row = "<tr>";
+			jQuery.each(data[i], function () {
+				row += "<td><a href=\"" + this['value'] + "\">"+ this['value'] +"</a></td>";
+			});
+			row += "</tr>";
+			$("#sparqlTable").append(row);
+		}
+	}
+	
+	//on socket emit drawTable function is called on
+	socket.on('results', function(res) {
+		drawTable(res['results']['bindings']);
+	});
+	
+	//button function to send query to node server
+	function queryResults() {
+		var queryThis = document.getElementById("query").value;
+		
+		//emit query
+		socket.emit('query',queryThis);
+	}
+	</script>
+</html>

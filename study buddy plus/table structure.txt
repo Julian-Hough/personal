@@ -1,0 +1,30 @@
+login
+
+uid int(10)
+username varchar(255)
+password varchar(255)
+salt varchar(255)
+firstname varchar(255)
+lastname varchar(255)
+email varchar(255)
+privileges int(2)
+
+TABLE groups
+
+name varchar(255)
+courseNum varchar(255)
+descr text
+creator varchar(255)
+time date
+level int(2) (1 for offical group;2 for study group;3 for group project)
+
+TABLE members
+
+student varchar(100)
+groupName varchar(100)
+
+TABLE posts
+student varchar(100)
+groupName varchar (100)
+comment text
+time date

@@ -1,0 +1,45 @@
+Blake: Database hosting, Fixed issues with login PHP
+
+Did a lot of bug checking/fixing. Configured the files to host the database on my
+cloud server. Previous MySQL experience was helpful. 
+
+************************************************************************************************************************
+
+
+David: Frontend development, debugging, styling
+
+Participated in the group discussion of what to do with our project and brought up many different ideas.
+Worked on styling for all internal pages.
+Created index page
+Created frontend pages and standardized menus
+Helped debug some PHP and HTML issues
+
+************************************************************************************************************************
+
+
+Graigor: Frontend development
+
+Worked on some minor changes / debugging features after pages were pushed to the git
+created original template for profile page
+Made update to php to make group names unique and made it so you could only be added to a group once
+
+************************************************************************************************************************
+
+
+Julian: Backend development
+
+Contributed ideas that led to the basis of our project's purpose.
+Worked on the connectivity of the database where php post requests were used to input
+new users that registers and logging in. Coded the search query
+to find relevant groups in our database that pertains to group name, course number, and description
+and the password change form so users if they want to, can change their password.
+
+************************************************************************************************************************
+
+Lu: Search functionality, Backend development
+Worked on mainly on backend functionality, like creating groups and posting comments on discussion board.
+Connecting databases with web pages and transferring data by post method. 
+Implemented admin privileges for creator of groups, only creator can add users into the group.
+Making user and group search functionality working.
+Constructed anchor tags with a hidden form submitted by post method, so group info page can work
+from multiple font end pages.
