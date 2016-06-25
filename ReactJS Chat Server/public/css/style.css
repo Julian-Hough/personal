@@ -1,0 +1,58 @@
+.users{
+	float : left;
+	margin-right: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border: 1px solid black;
+	height: 400px;
+	width: 110px;
+	overflow: auto;
+}
+
+.typing {
+	list-style:none;
+}
+
+ul > .user {
+    color: #7FFF00;
+}
+
+ul > .user > span {
+    color: black;
+}
+
+.userstyping {
+	float: right;
+	margin-right: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	list-style: none;
+	margin: 1em;
+	border: 1px solid black;
+	height: 365px;
+	width: 110px;
+	overflow: auto;
+}
+
+.chatbox {
+	margin-left: 10em;
+	border: 1px solid black;
+	width: 820px;
+	height: 400px;
+}
+
+.messages {
+	width: 600px;
+	height: 220px;
+	margin: 1em;
+	border : 1px solid black;
+	padding: 1em;
+	overflow: auto;
+}
+.message_form {
+	padding: 1em;
+}
+.change_name_form{
+	padding: 1.5em;
+	clear: both;
+}
